@@ -1,0 +1,332 @@
+*body{
+    margin: 0%;
+    padding: 0%;
+   box-sizing: border-box;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.imagen_logo{
+    width: 300px;
+    padding: 20px;
+}
+  /* nav */
+.contenedor_nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(142, 142, 140);
+    width: 100%;
+    height: auto;
+    align-items: center;
+    border: 5px solid rgb(142, 142, 141);
+} 
+ul{
+    display: flex;
+   
+} 
+li{
+    list-style-type: none;
+    margin: 5px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+li a:hover{
+    color: rgb(215, 188, 155);
+}
+a{
+    text-decoration: none; 
+    color: rgb(193, 189, 189);
+}     
+
+      /* SECCION NOSOTROS */
+#nosotros{
+    display: flex;
+   flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 5px 2px #f1efe2;
+    text-decoration-line: underline;
+    color: #706e70;
+   
+}
+p{
+    font-size: 24px;
+    color: rgb(120, 117, 117);
+}
+.imagen_principal{
+    width: 100%;
+}
+  
+h4{
+ font-weight: bold;
+ color: rgb(208, 196, 180);
+ text-align: center;
+ font-size: 20px;
+}
+
+   /* SECCION PRODUCTOS   */
+
+#productos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+H2{
+    text-align: center;
+    color: rgb(138, 98, 176);
+}  
+.prod{
+    width: 300px;
+    height: auto;
+    background-color: rgb(211, 201, 213);
+    border: 2px solid rgb(201, 198, 198);
+    margin: 10px 5px;
+    align-items: baseline;
+    box-shadow: 5px 10px 7px rgba(0, 0, 0, 0.5);
+    transition: all 300ms  /* animacion para el hover */
+   }
+.prod:hover{
+    transform: scale(1.05);
+    background-color: azure;
+    border-color: rgb(248, 250, 251);
+}   
+.prod_des{
+    width: 300px;
+}
+h3{
+    text-align: center;
+}
+span{
+    color: blueviolet;
+    font-weight: bold;
+   
+}
+.negocio{
+    color: #f1efe2;
+}
+    /*  SECCION ENVIOS  */
+
+#envios{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    width: auto;
+    height: 700px;
+    background:linear-gradient(rgba(53, 60, 77, 0.55), rgba(63, 74, 104, 0.55)), url(imagenes/fondo_reparto.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    flex-wrap: wrap;
+   
+}
+.boton{
+    color: chocolate;
+}
+#titulo_reparto{
+   margin: auto;
+   font-size: 25px;
+    align-items: baseline;
+}
+.parrafo_fondo{
+    color: rgb(246, 245, 216);
+    font-size: 25px;
+    margin: auto;
+}
+
+      /*  seccion contactos*/
+
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: auto;
+   
+}
+.formulario{
+    width: 60%;
+ 
+}
+input{
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+    border-color: rgb(229, 200, 165);
+   }
+ 
+input:hover{
+    border-color: rgb(231, 227, 224);
+}
+textarea{
+    margin-top: 10px;
+    width: 60%;
+}
+.btn{
+    margin-left: 10px;
+    padding: 8px 10px;
+    display: block;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 2px solid rgb(241, 198, 162);
+ } 
+ .btn:hover{
+    background-color: rgb(206, 137, 132);
+    color: azure;
+    border: solid 2px rgb(197, 166, 166);
+}
+
+
+
+/*----------- MAPA --------   */
+#mapa{
+    width: 300px;
+    height: 400px;
+}
+
+
+
+   /*------  footer -----  */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 50px;
+    background:linear-gradient(0deg, black, rgb(182, 179, 179)) ;
+}
+
+li #twitter, #gmail, #whatssap, #messenger{
+    color: aliceblue;
+    margin: 5px;
+    
+    width: 30px;
+ }
+@media(max-width:500px){
+    .imagen_logo{
+        width: 200px;
+        padding: 20px;
+        
+        
+    }
+    .negocio{
+        width: 25px;
+    }
+    ul li a{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    #imagen img{
+        width: 100%;
+        }
+    .contenido_principal {
+        width: auto;
+        font-size: 15px;
+        text-align: center;
+    } 
+    #imagen_envio{
+        display: none;
+    } 
+    .parrafo_fondo{
+        font-size: 18px;
+    }
+    #envios{
+        height: 400px;
+        margin-top: 0px;
+    }
+    #mapa{
+        width: 100%;
+
+    } 
+    iframe{
+        width: 100%;
+    } 
+}
+@media screen and (min-width:501px) and (max-width:800px)    {
+    #nosotros{
+      display: block;
+      
+    }
+    .contenido_principal p{
+        width: auto;
+        font-size: 19px;
+        text-align: center;
+    }
+    #imagen_envio{
+        display: none;
+    } 
+    .parrafo_fondo {
+        font-size: 18px;
+        text-align: center;
+    }
+    #mapa {
+        width: 100%;
+        height: auto;
+    }
+    iframe{
+        width: 100%;
+    }  
+}
+@media screen and (min-width:801px) and (max-width:1128px)    {
+    #nosotros{
+      display: block;
+
+    }
+    img .imagen_principal{
+        width: 100%;
+    }
+    .contenido_principal{
+        width: 100%;
+        text-align: center;
+    }
+    #imagen_envio{
+        display: none;
+    }
+    #mapa{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }  
+}
+@media screen and (min-width:1128px) and (max-width:1623px){
+    .contenido_principal{
+        width: 35%;
+        
+    }
+    #titulo_reparto{
+        font-size: 18px;
+    }
+    #nosotros{
+        justify-content: space-around;
+    }
+    #mapa{
+        width: 70%;
+    }
+    iframe{
+        width: 100%;
+        margin: auto;
+    }
+}
+@media screen and (min-width:1623px){
+    #mapa{
+        width: 70%;
+    }
+    iframe{
+        width: 100%;
+        margin: auto;
+    }
+}
